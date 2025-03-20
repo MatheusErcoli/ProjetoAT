@@ -40,3 +40,6 @@ nav a {
     background-color: white;
     color: limegreen;
 }
+.btn2:hover {
+    color: limegreen;
+}
