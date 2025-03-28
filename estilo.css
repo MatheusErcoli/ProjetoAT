@@ -163,6 +163,11 @@ footer {
             text-decoration: none;
             color: white;
             margin: 0 290px;
+            transition: 0.5s;
+        }
+        .bottom:hover {
+            background-color: black;
+            color: limegreen;
         }
     }
 
@@ -179,4 +184,10 @@ footer a{
 footer a:hover{
     background-color: limegreen;
     color: white;
+}
+footer h1{
+    padding: 10px 10px 10px 30px;
+}
+i {
+    padding: 10px;
 }
