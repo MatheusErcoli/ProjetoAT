@@ -116,6 +116,7 @@ footer {
     text-align: center;
     background-color: black;
     color: limegreen;
+    margin-top: 30px;
     h1{
         margin: 0;
         padding: 10px 10px 10px 10px;
@@ -143,5 +144,18 @@ i{
     padding: 10px;
 }
 
-
+.bottom {
+    padding: 10px 15px;
+    background-color: limegreen;
+    border-radius: 10px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+    margin: 0 530px;
+    transition: 0.5s;
+}
+.bottom:hover {
+    background-color: black;
+    color: limegreen;
+}
         
