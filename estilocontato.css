@@ -76,3 +76,73 @@ i{
     margin-bottom: 30px;
     border-radius: 10px;
 }
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+label{
+    font-weight: bold;
+}
+.formulario{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+label, .formulario{
+    margin: 10px 0;
+}
+.green{
+    background-color: limegreen;
+    color: white;
+}
+.red{
+    background-color: red;
+    color: white;
+}
+.red, .green{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+}
+.green:hover{
+    background-color: green;
+}
+.red:hover{
+    background-color: darkred;
+}
+.formulario:focus{
+    background-color: #f0f0f0;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: limegreen;
+    margin-top: 30px;
+    h1{
+        margin: 0;
+        padding: 10px 10px 10px 10px;
+    }
+
+    p {
+        margin: 0;
+        padding: 10px 10px 10px 30px;
+    }
+}
+footer a{
+    text-decoration: none;
+    color: green;
+    margin: 20px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+footer a:hover{
+    background-color: limegreen;
+    color: white;
+}
