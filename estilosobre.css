@@ -96,6 +96,10 @@ section{
 
     }
 }
+.container {
+    width: 50%;
+    margin: auto;
+}
 .bot {
     padding: 10px 15px;
     background-color: limegreen;
@@ -142,13 +146,13 @@ i{
 }
 
 .bottom {
-    padding: 10px 15px;
+    padding: 15px 30px;
     background-color: limegreen;
     border-radius: 10px;
     transition: 0.5s;
     text-decoration: none;
     color: white;
-    margin: 0 520px;
+    margin: 0 480px;
     transition: 0.5s;
 }
 .bottom:hover {
