@@ -144,3 +144,40 @@ footer a:hover{
     background-color: limegreen;
     color: white;
 }
+@media (max-width: 520px){
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .faixa {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    label, .formulario {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer a {
+        margin: 10px auto;
+        width: fit-content;
+    }
+}
