@@ -204,11 +204,18 @@ footer h1{
 i {
     padding: 10px;
 }
+.header-menu{
+    border: 1px solid white;
+    color: white;
+    font-size: 2em;
+    float: right;
+    padding: 10px;
+    margin: 10px;
+    display: none;
+}
 
 @media (max-width: 520px) {
     header {
-        flex-direction: column;
-        text-align: center;
         padding: 20px;
     }
 
@@ -274,5 +281,26 @@ i {
     footer a {
         margin: 10px;
         padding: 5px;
+    }
+    .header-menu{
+        display: block;
+        font-size: 1.5em;
+        margin: 10px;
+        margin-left: auto;
+    }
+    .header-nav{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #333;
+        text-align: center;
+    }
+    .header-nav.active{
+        display: flex;
+    }
+    .header-nav ul{
+        padding-bottom: 15px;
     }
 }

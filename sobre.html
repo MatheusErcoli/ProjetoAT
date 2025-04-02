@@ -14,7 +14,8 @@
     <main>
         <header>
             <h2 class="dosis">ARCHER TIME</h2>
-            <nav>
+            <a href="javascript:MostrarMenu()" title="menu" class="header-menu"><i class="fa-solid fa-bars"></i></a>
+            <nav class="header-nav">
                 <ul>
                     <li><a href="index.html" title="HOME" class="btn2"><i class="fa-solid fa-house"></i>HOME</a></li>
                     <li><a href="sobre.html" title="SOBRE" class="btn2"><i class="fa-solid fa-newspaper"></i>SOBRE</a></li>
@@ -60,6 +61,14 @@
                 <a href="https://github.com/MatheusErcoli" target="_blank"><i class="fa-brands fa-github"></i></a>
             </p>
         </footer>
+        <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        function MostrarMenu() {
+            //document.querySelector('.header-nav')//
+            $('.header-nav').toggle();
+        }
+    </script>
     
 </body>
 </html>
