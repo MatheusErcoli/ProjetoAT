@@ -73,3 +73,53 @@ i{
     margin: 20px auto;
     max-width: 90%;
 }
+section{
+    margin: 0px auto;
+    width: 50%;
+iframe{
+    width: 100%;
+    border-radius: 5px;
+}
+}
+.bottom {
+    padding: 15px 20px;
+    background-color: limegreen;
+    border-radius: 10px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+    margin: 0 290px;
+    transition: 0.5s;
+}
+.bottom:hover {
+    background-color: black;
+    color: limegreen;
+}
+footer {
+    text-align: center;
+    background-color: black;
+    color: limegreen;
+    margin-top: 30px;
+    h1{
+        margin: 0;
+        padding: 10px 10px 10px 10px;
+    }
+
+    p {
+        margin: 0;
+        padding: 10px 10px 10px 30px;
+    }
+}
+footer a{
+    text-decoration: none;
+    color: green;
+    margin: 20px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+footer a:hover{
+    background-color: limegreen;
+    color: white;
+}
