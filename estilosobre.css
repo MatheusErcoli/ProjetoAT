@@ -24,6 +24,13 @@ header {
     position: relative;
     font-family: "Dosis";
     font-size: 18px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    a{
+        text-decoration: none;
+        color: limegreen;
+    }
 }
 
 nav {
@@ -52,6 +59,7 @@ nav a {
     background-color: limegreen;
     border-radius: 10px;
     transition: 0.5s;
+    margin: 0 20px;
 }
 
 .btn:hover {
@@ -64,6 +72,15 @@ nav a {
 }
 
 .faixa {
+    font-size: 24px;
+    color: green;
+    text-align: center;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 90%;
+    margin-top: 100px;
+}
+.faixa2 {
     font-size: 24px;
     color: green;
     text-align: center;
@@ -192,6 +209,9 @@ i{
         font-size: 16px; 
         margin: 10px 0;
     }
+    .faixa{
+        margin-top: 140px;
+    }
 
   
     .grade {
@@ -229,7 +249,7 @@ i{
     .header-menu{
         display: block;
         font-size: 1.5em;
-        margin: 10px;
+        margin: 10px 40px;
         margin-left: auto;
     }
     .header-nav{
