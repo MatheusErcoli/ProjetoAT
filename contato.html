@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,36 +14,42 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/aos.css">
 </head>
+
 <body>
-    <main>
-        <header>
-            <a href="index.html">
+    <header>
+        <a href="index.html">
             <h2 class="dosis" title="nome do jogo">ARCHER TIME</h2>
-            </a>
-            <a href="javascript:MostrarMenu()" title="menu" class="header-menu"><i class="fa-solid fa-bars"></i></a>
-            <nav class="header-nav">
-                <ul>
-                    <li><a href="index.html" title="HOME" class="btn2"><i class="fa-solid fa-house"></i>HOME</a></li>
-                    <li><a href="sobre.html" title="SOBRE" class="btn2"><i class="fa-solid fa-newspaper"></i>SOBRE</a></li>
-                    <li><a href="galeria.html" title="GALERIA DE FOTOS" class="btn2"><i class="fa-solid fa-image"></i>GALERIA DE FOTOS</a></li>
-                    <li><a href="contato.html" title="CONTATO" class="btn2"><i class="fa-solid fa-envelope"></i>CONTATO</a></li>
-                    <li><a href="jogar.html" title="JOGAR" class="btn"><i class="fa-solid fa-play"></i>JOGAR</a></li>
-                </ul>
-            </nav>
-        </header>
+        </a>
+        <a href="javascript:MostrarMenu()" title="menu" class="header-menu"><i class="fa-solid fa-bars"></i></a>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html" title="HOME" class="btn2"><i class="fa-solid fa-house"></i>HOME</a></li>
+                <li><a href="sobre.html" title="SOBRE" class="btn2"><i class="fa-solid fa-newspaper"></i>SOBRE</a></li>
+                <li><a href="galeria.html" title="GALERIA DE FOTOS" class="btn2"><i
+                            class="fa-solid fa-image"></i>GALERIA DE FOTOS</a></li>
+                <li><a href="contato.html" title="CONTATO" class="btn2"><i class="fa-solid fa-envelope"></i>CONTATO</a>
+                </li>
+                <li><a href="jogar.html" title="JOGAR" class="btn"><i class="fa-solid fa-play"></i>JOGAR</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
         <section>
             <h2 class="faixa" title="contato"><i class="fa-solid fa-envelope"></i>Contato</h2>
         </section>
         <section class="container">
             <form name="contato" method="post" title="formulario">
                 <label for="nome" title="digite seu nome">Digite seu Nome:</label>
-                <input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo" size="50" maxlength="40" class="formulario" autocomplete="off">
+                <input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo" size="50"
+                    maxlength="40" class="formulario" autocomplete="off">
                 <br>
                 <label for="email" title="digite seu email">Digite seu E-mail:</label>
-                <input type="email" name="email" id="email" required placeholder="Digite seu e-mail" maxlength="40" class="formulario" autocomplete="off">
+                <input type="email" name="email" id="email" required placeholder="Digite seu e-mail" maxlength="40"
+                    class="formulario" autocomplete="off">
                 <br>
                 <label for="Mensagem" title="digite uma Mensagem">Mensagem:</label>
-                <textarea name="Mensagem" id="Mensagem" rows="10" required class="formulario" placeholder="Digite sua Mensagem..."></textarea>
+                <textarea name="Mensagem" id="Mensagem" rows="10" required class="formulario"
+                    placeholder="Digite sua Mensagem..."></textarea>
                 <button type="submit" class="green" title="Enviar" id="botao">Enviar</button>
                 <button type="reset" class="red" title="Redefinir">Redefinir</button>
 
@@ -54,9 +61,12 @@
         <p>desenvolvido por Matheus Ercoli Aristides - Todos os Direitos reservados</p>
         <br>
         <p>
-            <a href="https://www.instagram.com/matheus_ercoli/" target="_blank" title="link do instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/matheus.ercoli/" target="_blank" title="link do facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://github.com/MatheusErcoli" target="_blank" title="link do github"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/matheus_ercoli/" target="_blank" title="link do instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/matheus.ercoli/" target="_blank" title="link do facebook"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://github.com/MatheusErcoli" target="_blank" title="link do github"><i
+                    class="fa-brands fa-github"></i></a>
         </p>
     </footer>
     <script src="js/jquery-1.11.3.min.js"></script>
@@ -68,34 +78,30 @@
         }
     </script>
     <script>
-        document.getElementById('botao').onclick = function() {
+        document.getElementById('botao').onclick = function () {
             var nome = document.getElementById('nome').value;
             var email = document.getElementById('email').value;
             var mensagem = document.getElementById('Mensagem').value;
-            if (nome == "" && email == "" && mensagem == ""){
-                alert ("Preencha todos os campos!");
+            if (nome == "" && email == "" && mensagem == "") {
+                alert("Preencha todos os campos!");
+            } else if (email == "") {
+                alert("Informe seu e-mail!");
             } else {
-                if (nome == ""){
-                    alert ("Informe seu nome!");
-            }
-                if (email == ""){
-                    alert ("Informe seu e-mail!");
+                if (!validateEmail(email)) {
+                    alert("E-mail inválido!");
+                }
+                else if (nome == "") {
+                    alert("Informe seu nome!");
+                } else if (mensagem == "") {
+                    alert("Escreva sua mensagem!");
                 } else {
-                    if (!validateEmail(email)){
-                        alert ("E-mail inválido!");
-                    }
+                    alert("Mensagem enviada com sucesso!");
                 }
 
-                if (mensagem == ""){
-                    alert ("Escreva sua mensagem!");
-                }
-            }
-            if (nome != "" && email != "" && mensagem != ""){
-                alert ("Mensagem enviada com sucesso!");
             }
         }
         const validateEmail = (email) => {
-            const regex = /^[^\s]+@[^\s]+\.[^\s]+$/;
+            const regex = /^[^\s]+@[^\s]+$/;
             return regex.test(email);
         };
     </script>

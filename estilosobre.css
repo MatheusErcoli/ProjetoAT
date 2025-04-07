@@ -98,6 +98,15 @@ section{
         color: #333;
 }
 }
+.texto2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #333;
+    width: 50%;
+    margin: auto;
+}
+
 .grade {
     display: grid;
     grid-template-columns: repeat(2, 50%);
