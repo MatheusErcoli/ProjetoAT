@@ -43,7 +43,7 @@
                 <br>
                 <label for="Mensagem" title="digite uma Mensagem">Mensagem:</label>
                 <textarea name="Mensagem" id="Mensagem" rows="10" required class="formulario" placeholder="Digite sua Mensagem..."></textarea>
-                <button type="submit" class="green" title="Enviar">Enviar</button>
+                <button type="submit" class="green" title="Enviar" id="botao">Enviar</button>
                 <button type="reset" class="red" title="Redefinir">Redefinir</button>
 
             </form>
@@ -66,6 +66,38 @@
             //document.querySelector('.header-nav')//
             $('.header-nav').toggle();
         }
+    </script>
+    <script>
+        document.getElementById('botao').onclick = function() {
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var mensagem = document.getElementById('Mensagem').value;
+            if (nome == "" && email == "" && mensagem == ""){
+                alert ("Preencha todos os campos!");
+            } else {
+                if (nome == ""){
+                    alert ("Informe seu nome!");
+            }
+                if (email == ""){
+                    alert ("Informe seu e-mail!");
+                } else {
+                    if (!validateEmail(email)){
+                        alert ("E-mail inválido!");
+                    }
+                }
+
+                if (mensagem == ""){
+                    alert ("Escreva sua mensagem!");
+                }
+            }
+            if (nome != "" && email != "" && mensagem != ""){
+                alert ("Mensagem enviada com sucesso!");
+            }
+        }
+        const validateEmail = (email) => {
+            const regex = /^[^\s]+@[^\s]+\.[^\s]+$/;
+            return regex.test(email);
+        };
     </script>
 </body>
 </html>

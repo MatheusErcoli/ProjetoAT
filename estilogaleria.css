@@ -25,9 +25,9 @@ header {
     font-family: "Dosis";
     font-size: 18px;
     position: fixed;
-    width: 100%;
+    z-index: 1000px;
     top: 0;
-    z-index: 1000;
+    width: 100%;
     a{
         text-decoration: none;
         color: limegreen;
@@ -79,7 +79,7 @@ nav a {
     padding: 15px;
     margin: 0px auto;
     max-width: 90%;
-    margin-top: 100px;
+    margin-top: 120px;
     margin-bottom: 15px;
 }
 i{
@@ -158,9 +158,7 @@ i{
     .faixa {
         font-size: 18px;
         padding: 10px;
-        margin-top: 150px;
-        margin-bottom: 10px;
-        font-weight: bold;
+        margin-top: 30px;
     }
 
     footer {
@@ -174,7 +172,7 @@ i{
     .header-menu{
         display: block;
         font-size: 1.5em;
-        margin: 10px 40px;
+        margin: 10px;
         margin-left: auto;
     }
     .header-nav{
