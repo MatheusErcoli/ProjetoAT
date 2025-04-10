@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Dosis:wght@200..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="aos.css">
 
 </head>
 
@@ -32,18 +33,18 @@
             </nav>
         </header>
         <main>
-        <section>
+        <section data-aos="fade-down">
             <h2 class="faixa" title="galeria"><i class="fa-solid fa-image"></i>GALERIA</h2>
         </section>
         <section class="container" >
             <div class="grid">
-                <div class="coluna">
+                <div class="coluna" data-aos="fade-down">
                     <img src="img/imagem1.png" alt="Foto jogo" width="350" height="200" title="foto 1">
                 </div>
-                <div class="coluna">
+                <div class="coluna" data-aos="fade-down">
                     <img src="img/imagem2.png" alt="Foto jogo 2" width="350" height="200" title="foto 2">
                 </div>
-                <div class="coluna">
+                <div class="coluna" data-aos="fade-down">
                     <img src="img/imagem3.png" alt="Foto jogo 3" width="350" height="200" title="foto 3">
                 </div>
             </div>
@@ -51,23 +52,23 @@
         </section>
         <section class="container">
             <div class="grid">
-                <div class="coluna">
+                <div class="coluna" data-aos="fade-down">
                     <img src="img/imagem4.png" alt="Foto jogo 4" width="350" height="200" title="foto 4">
                 </div>
-                <div class="coluna">
+                <div class="coluna" data-aos="fade-down">
                     <img src="img/imagem5.png" alt="Foto jogo 5" width="350" height="200" title="foto 5">
                 </div>
-                <div class="coluna">
+                <div class="coluna" data-aos="fade-down">
                     <img src="img/imagem6.png" alt="Foto jogo 6" width="350" height="200" title="foto 6">
                 </div>
             </div>
         </section>
         <section class="container" >
             <div class="grid">
-                <div class="coluna">
+                <div class="coluna" data-aos="fade-down">
                     <img src="img/imagem7.png" alt="Foto jogo 7" width="350" height="200" title="foto 7"> 
                 </div>
-                <div class="coluna">
+                <div class="coluna" data-aos="fade-down">
                     <img src="img/imagem8.png" alt="Foto jogo 8" width="350" height="200" title="foto 8">
                 </div>
             </div>
@@ -90,6 +91,9 @@
             //document.querySelector('.header-nav')//
             $('.header-nav').toggle();
         }
+    </script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -25,20 +25,18 @@
             <ul>
                 <li><a href="index.html" title="HOME" class="btn2"><i class="fa-solid fa-house"></i>HOME</a></li>
                 <li><a href="sobre.html" title="SOBRE" class="btn2"><i class="fa-solid fa-newspaper"></i>SOBRE</a></li>
-                <li><a href="galeria.html" title="GALERIA DE FOTOS" class="btn2"><i
-                            class="fa-solid fa-image"></i>GALERIA DE FOTOS</a></li>
-                <li><a href="contato.html" title="CONTATO" class="btn2"><i class="fa-solid fa-envelope"></i>CONTATO</a>
-                </li>
+                <li><a href="galeria.html" title="GALERIA DE FOTOS" class="btn2"><i class="fa-solid fa-image"></i>GALERIA DE FOTOS</a></li>
+                <li><a href="contato.html" title="CONTATO" class="btn2"><i class="fa-solid fa-envelope"></i>CONTATO</a></li>
                 <li><a href="jogar.html" title="JOGAR" class="btn"><i class="fa-solid fa-play"></i>JOGAR</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h2 class="faixa" title="contato"><i class="fa-solid fa-envelope"></i>Contato</h2>
+            <h2 class="faixa" title="contato" data-aos="fade-right"><i class="fa-solid fa-envelope"></i>Contato</h2>
         </section>
         <section class="container">
-            <form name="contato" method="post" title="formulario">
+            <form name="contato" method="get" title="formulario" data-aos="fade-right">
                 <label for="nome" title="digite seu nome">Digite seu Nome:</label>
                 <input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo" size="50"
                     maxlength="40" class="formulario" autocomplete="off">
@@ -104,6 +102,9 @@
             const regex = /^[^\s]+@[^\s]+$/;
             return regex.test(email);
         };
+    </script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>

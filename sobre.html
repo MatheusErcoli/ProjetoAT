@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Dosis:wght@200..800&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="aos.css">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section data-aos="fade-down">
             <h2 class="faixa" title="Sobre mim"><i class="fa-solid fa-user"></i>Sobre mim</h2>
             <p class="texto2">
                 Meu nome é Matheus Ercoli Aristides, tenho 18 anos, moro em Campo Mourão sou estudante de TADS(Tecnologia análise e desenvolvimento de sistemas) no integrado, 
@@ -41,7 +42,7 @@
                 fiz um site então espero ter ficado bom, o jogo foi feito no Construct 3, e na parte do site usei html5, CSS3 e um pouco de JS.
             </p>
         </section>
-        <section class="gray">
+        <section data-aos="fade-down">
             <h2 class="faixa" id="fai"><i class="fa-solid fa-newspaper" title="sobre o jogo"></i>Sobre o jogo</h2>
             <p class="container">
                 Archer time é um jogo de plataforma feito para um projeto de faculdade aonde o protagonista Ethan é um
@@ -54,8 +55,8 @@
                 de lava e muito mais.
             </p>
         </section>
-        <section>
-            <h2 class="faixa2" title="comandos do jogo">Comandos</h2>
+        <section data-aos="fade-down">
+            <h2 class="faixa2" title="comandos do jogo"><i class="fa-solid fa-gamepad"></i>Comandos</h2>
             <div class="grade">
                 <div class="col">
                     <img src="img/correr.png" alt="correr" width="150" height="150" title="comando de correr">
@@ -67,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section data-aos="fade-down">
             <a href="jogar.html" class="bottom" title="botão para ir para o jogo"><i
                     class="fa-solid fa-play"></i>Jogar</a>
         </section>
@@ -93,7 +94,9 @@
             $('.header-nav').toggle();
         }
     </script>
-
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
